@@ -10,16 +10,14 @@
         $scope.input = "";
         $scope.message = "";
         $scope.stack = function() {
-            // already can access $scope.input
-            // dont need to pass to stack()
+        
             var array = $scope.input.split(',');
 
-            // set $scope.message
-            // instead of returning String
+         
             if (array.length < 3) {
-                $scope.message = "Enjoy";
+                $scope.message = "Too much";
             } else {
-                $scope.message = "Too much!";
+                $scope.message = "Enjoy!";
             }
         };
     }
